@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'anime',
+    loadChildren: () => import('./view/anime/anime.module').then( m => m.AnimePageModule)
+  },
 ];
 
 @NgModule({

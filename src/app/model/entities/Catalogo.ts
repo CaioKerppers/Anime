@@ -1,4 +1,5 @@
 export class Catalogo{
+    private _id!: string;
     private _temporada: number;
     private _nome: string;
     private _datalancamento: Date;
@@ -11,6 +12,12 @@ export class Catalogo{
         this._nome = nome;
         this._temporada = temporada;
         this._estudio = estudio;   
+    }
+    public get id(): string{
+        return this._id
+    }
+    public set id(value: string){
+        this._id = value;
     }
     public get temporada(): number {
         return this._temporada;
