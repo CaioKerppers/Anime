@@ -41,4 +41,8 @@ export class AdicionarPage implements OnInit {
     });
     await alert.present();
   }
+
+  voltar(){
+    this.router.navigate(["/home"]);
+  }
 }
