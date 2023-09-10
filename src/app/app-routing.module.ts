@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'anime',
     loadChildren: () => import('./view/anime/anime.module').then( m => m.AnimePageModule)
   },
+  {
+    path: 'adicionar',
+    loadChildren: () => import('./view/adicionar/adicionar.module').then( m => m.AdicionarPageModule)
+  },
 ];
 
 @NgModule({
